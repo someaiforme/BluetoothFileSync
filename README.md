@@ -1,7 +1,9 @@
 # BAWFSync
 Bidirectional Android Windows File Sync
 
-A tool for syncing files between an Android phone and Windows computer.
+A tool for syncing files between an Android phone and Windows computer over Bluetooth
+
+No wifi, no cable, no internet, totally offline
 
 Python Windows script
 
