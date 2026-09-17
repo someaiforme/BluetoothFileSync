@@ -8,6 +8,10 @@ A tool for syncing files between an Android phone and Windows computer over Blue
 
 No wifi, no cable, no internet, totally offline
 
+Use case is for smaller files, ie this isn't going to be practical for photos or videoes, this is because Classic Bluetooth RFCOMM tops out somewhere around 1–3 Mbps in practice (roughly 150–375 KB/s)
+
+If we assume 250 KB/s this means a 1MB file takes 4 seconds, 10MB takes 40 seconds
+
 Python Windows script
 
 Auto Turn on/off Bluetooth
