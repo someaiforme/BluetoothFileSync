@@ -3,6 +3,9 @@ Bidirectional Android Windows File Sync
 
 A tool for syncing files between an Android phone and Windows computer over Bluetooth
 
+<img width="1024" height="1024" alt="bawfsync_logo" src="https://github.com/user-attachments/assets/36fdf08f-d00a-45f7-b5c7-71db4bfd7e8f" />
+
+
 No wifi, no cable, no internet, totally offline
 
 Python Windows script
