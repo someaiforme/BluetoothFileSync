@@ -12,38 +12,11 @@ Use case is for smaller files, ie this isn't going to be practical for photos or
 
 Real world testing results are 5MB takes 30 seconds
 
+Tested on Windows 11:
 Python Windows script
 Dependancy: Encryption
 
-Two-way file synchronization
-
-SHA-256 comparison
-
-Conflict preservation on both sides
-
-Backups before replacement
-
-.btpart protection for interrupted transfers
-
-Secure Bluetooth RFCOMM connection
-
-First-time pairing/authentication
-
-AES-256-GCM encrypted post-authentication traffic
-
-HKDF-derived directional session keys
-
-Counter-based nonces
-
-Filename handling with spaces
-
-Auto Sync
-
-Bluetooth power restore behavior
-
-Sync history
-
-Details
+Tested on Android 15
 
 What it does
 
