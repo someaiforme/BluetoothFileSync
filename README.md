@@ -1,5 +1,5 @@
-# BAWFSync
-Bidirectional Android Windows File Sync
+# Bluetooth-File-Sync
+Bidirectional Android Windows File Sync over Bluetooth
 
 A tool for syncing files between an Android phone and Windows computer over Bluetooth
 
