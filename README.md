@@ -10,27 +10,38 @@ No wifi, no cable, no internet, totally offline
 
 Use case is for smaller files, ie this isn't going to be practical for photos or videoes, this is because Classic Bluetooth RFCOMM tops out somewhere around 1–3 Mbps in practice (roughly 150–375 KB/s)
 
-If we assume 250 KB/s this means a 1MB file takes 4 seconds, 10MB takes 40 seconds
+Real world testing results are 5MB takes 30 seconds
 
 Python Windows script
+Dependancy: Encryption
 
-Auto Turn on/off Bluetooth
+Two-way file synchronization
 
-Auto Connect and Sync
+SHA-256 comparison
 
-SHA-256 hashing for local files
+Conflict preservation on both sides
 
-persistent last-successful-sync state
+Backups before replacement
 
-detection of Android-only changes vs. Windows-only changes
+.btpart protection for interrupted transfers
 
-true two-sided conflict detection
+Secure Bluetooth RFCOMM connection
 
-Backups before overwriting
+First-time pairing/authentication
 
-Conflicts copies for both Android and Windows versions
+AES-256-GCM encrypted post-authentication traffic
 
-temporary .btpart downloads with hash verification
+HKDF-derived directional session keys
+
+Counter-based nonces
+
+Filename handling with spaces
+
+Auto Sync
+
+Bluetooth power restore behavior
+
+Sync history
 
 Details
 
