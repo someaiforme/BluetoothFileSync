@@ -57,8 +57,35 @@ Waits for one incoming connection, then runs a length-prefixed framed protocol (
 
 Authentication is a custom app-layer scheme: first-run pairing shows a 6-digit code, negotiates a 32-byte shared key over HMAC-SHA256 challenge/response, and stores the key DPAPI-encrypted at rest. Subsequent connections do a nonce/HMAC challenge instead of re-pairing.
 
-File transfer uses a .btpart staging file, SHA-256 verification, and atomic os.replace into place; existing destination files are moved to a timestamped Backups/ copy before being overwritten, and there's a parallel Conflicts/ mechanism for divergent versions.
+File transfer uses a .btpart staging file, SHA-256 verification, and atomic os.replace into place; existing 
+destination files are moved to a timestamped Backups/ copy before being overwritten, and there's a parallel Conflicts/ mechanism for divergent versions.
 
 Path safety is done via (SYNC_FOLDER / relative).resolve() + relative_to(SYNC_FOLDER), which is actually the right pattern — it correctly rejects ../ traversal, absolute paths, and symlink escapes, since resolve() normalizes everything before the containment check.
 binary-safe file transfers
 
+| Item                                             | Status   |
+| ------------------------------------------------ | -------- |
+| Two-way whole-folder sync                        | ✅        |
+| SHA-256 change detection                         | ✅        |
+| True conflict detection                          | ✅        |
+| Preserve both versions on conflict               | ✅        |
+| Backups before replacement                       | ✅        |
+| `.btpart` interrupted-transfer handling          | ✅        |
+| Sync history                                     | ✅        |
+| Bluetooth startup/restore behavior               | ✅        |
+| Automatic sync                                   | ✅        |
+| Remember device/folder                           | ✅        |
+| Change device/folder                             | ✅        |
+| Forget BAWFSync device/authentication            | ✅        |
+| Pairing + authentication                         | ✅        |
+| Encrypted transfer channel                       | ✅        |
+| Unauthorized-device rejection                    | ✅        |
+| Clear Windows authentication/pairing messages    | ✅        |
+| Persistent Android EXIT button                   | ✅        |
+| Exit automatically after successful sync         | ✅        |
+| No Bluetooth-off warning on Android              | ✅        |
+| File-extension restrictions                      | None     |
+| **Test unusual filenames**                       | 🟡       |
+| **Test very large files**                        | 🟡       |
+| **Test interrupted transfers repeatedly**        | 🟡       |
+| **Test Android-side file accessibility/editing** | 🟡       |
