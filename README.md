@@ -1,7 +1,5 @@
-# Bluetooth-File-Sync
-Bidirectional Android Windows File Sync over Bluetooth
-
-A tool for syncing files between an Android phone and Windows computer over Bluetooth
+# Bluetooth File Sync
+A tool for syncing files between an Android phone and Windows computer over Bluetooth with Backups and Conflict handling
 
 <img width="512" height="512" alt="bawfsync_logo" src="https://github.com/user-attachments/assets/36fdf08f-d00a-45f7-b5c7-71db4bfd7e8f" />
 
