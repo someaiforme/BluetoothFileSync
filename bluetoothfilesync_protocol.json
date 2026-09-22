@@ -1,0 +1,6 @@
+{
+  "service_name": "bluetoothfilesync",
+  "service_uuid": "7b7f0a7a-5f6c-4c0b-9a21-5e6c6b3c2f91",
+  "protocol_version": "2",
+  "rfcomm_channel": 3
+}
