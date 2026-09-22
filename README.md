@@ -14,6 +14,8 @@ Tested on Windows 11:
 Python Windows script
 Dependancy: Encryption
 
+There's a very untested linux Python script I can't vouch for.
+
 Tested on Android 15
 
 What it does
